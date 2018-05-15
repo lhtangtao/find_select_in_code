@@ -13,7 +13,7 @@ from file import get_all_file, find_keyword_in_file
 from folder import get_folder_useful
 
 
-def final(kind, path, keyword):
+def final(kind, path, keyword, except_word=""):
     file_list = []
     folder_list = []
     folder = get_folder_useful(path)  # 获取所有的有用文件夹 返回一个列表
@@ -24,8 +24,8 @@ def final(kind, path, keyword):
         for i in folder_file:
             file_list.append(i)
     for i in file_list:
-        find_keyword_in_file(i, keyword)
+        find_keyword_in_file(i, keyword, except_word)
 
 
 if __name__ == '__main__':
-    final(".java", "/Users/taotang/GitOfGeely/judger/", "select")
+    final(".xml", "/Users/taotang/GitOfGeely/", "$",except_word="${")
