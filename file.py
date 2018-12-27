@@ -41,5 +41,5 @@ def find_keyword_in_file(file_path, keyword):
                 print line
 
 if __name__ == '__main__':
-    print get_all_file("/Users/taotang/GitOfGeely/new/first")
-    find_keyword_in_file("/Users/taotang/GitOfGeely/new/first/pom.xml", "elastic-job")
+    print get_all_file("/Users/taotang/new/first")
+    find_keyword_in_file("/Users/taotang//new/first/pom.xml", "elastic-job")
